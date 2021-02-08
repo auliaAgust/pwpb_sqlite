@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/terang"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
@@ -9,8 +10,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="10dp"
         app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/terang"
+        android:backgroundTint="@color/terang"
         android:layout_margin="5dp">
 
         <LinearLayout
@@ -19,16 +21,36 @@
             android:orientation="vertical"
             android:layout_margin="5dp">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/base"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:text="Name : "
+                android:paddingRight="15dp"/>
             <EditText
                 android:id="@+id/edtname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
+                android:textColor="@color/base"
                 android:textSize="16sp"
                 android:layout_marginBottom="10dp"
                 android:inputType="textPersonName"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/base"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:text="Age : "
+                android:paddingRight="15dp"/>
             <EditText
                 android:id="@+id/edtage"
+                android:textColor="@color/base"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -44,7 +66,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#fff"
-                android:background="@color/colorAccent"/>
+                android:backgroundTint="@color/muda"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
